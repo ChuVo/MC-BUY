@@ -13,37 +13,46 @@
 </head>
 <body>
     <header class='header'>
-        <div class='header__info'>
+        <div class="header__box">
+            <div class='header__info'>
             <div class="header__info-item">
                 <img class='header__img' src="image/icon/aeroplane.png" alt="Бесплатная доставка и примерка">
                 <span class="header__info-text">Бесплатная доставка и примерка</span>
             </div>
             <div class='header__info-item'>
                 <img class='header__img' src="image/icon/time.png" alt="Рабочий график">
-                <span class='header__info-text'>Пр - Вс 9:00 - 21:00</span>
+                <span class='header__info-text'>Пн - Вс 9:00 - 21:00</span>
             </div>
             <div class='header__info-item'>
                 <img class='header__img' src="image/icon/call.png" alt="Позвоните нам">
-                <span class='header__info-text'>8 800 555 27 48</span>
+                <span class='header__info-text header__info-text--call-invisible'>8 800 555 27 48  8 800 555 2748</span>
             </div>
-            <div class='header__info-item'>
+            <div class='header__info-item header__info-item--invisible'>
                 <img class='header__img' src="image/icon/user.png" alt="Рабочий график">
                 <span class='header__info-text'>Вход/Регистрация</span>
             </div>
         </div>
         <div class="header__container">
-            <div class="header__form-search">
-                <img class='header__img' src="image/icon/magnifying-glass.png" alt="Найте товар">
-                <input class='search-value' value="Поиск" onclick="value = ''"></input>
+            <div class="header__form-search header__form-search--down">
+                <div class="header__menu-icon">  <!-- Иконка бургера меню -->
+                    <input type="checkbox"  id="menu__check">
+                    <label  for="menu__check" ></label>
+                    <span class="menu__icon-item menu__icon-item--first"></span>
+                    <span class="menu__icon-item menu__icon-item--second"></span>
+                    <span class="menu__icon-item menu__icon-item--third"></span>
+                    <span class="menu__icon-item menu__icon-item--fourth"></span>                      
+                </div>
+                <img class='header__img header__img--search' src="image/icon/magnifying-glass.png" alt="Найте товар">
+                <input class='header__search-value' value="Поиск" onclick="value = ''"></input>
             </div>
             <img class="logo" src="image/icon/mc-buy.png">
-            <div class="goods-basket">
-                <img class='header__img' src="image/icon/heart-upside-down.png" alt="Избранное">
-                <img class='header__img' src="image/icon/basket.png" alt="Корзина">
+            <div class="goods-basket header__goods-basket--down">
+                <img class='header__img header__img--search' src="image/icon/heart-upside-down.png" alt="Избранное">
+                <img class='header__img header__img--search' src="image/icon/basket.png" alt="Корзина">
                 <span .goods-bascet__counter>10</span><!-- добавится через js -->                   
             </div>
         </div>
-        <div class="header__menu menu">
+        <div class="header__menu menu">            
             <nav class="menu__items">
                 <a class="menu__item" href="#">новинки</a>
                 <a class="menu__item" href="#">одежда</a>
@@ -52,8 +61,10 @@
                 <a class="menu__item" href="#">аксесуары</a>
                 <a class="menu__item"href="#">модный блог</a>
                 <a class="menu__item"href="#">sale</a>
-            </nav>
+            </nav>                       
         </div>
+        </div>
+        
     </header>
 
     
