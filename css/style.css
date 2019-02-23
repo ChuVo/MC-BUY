@@ -3,13 +3,13 @@ html {
 }
 
 body {
+    background-image: linear-gradient(to bottom, #525252 0,  #525252 40px, #fff 40px, #fff 146px,  #525252 146px, #525252 147px,#fff 147px, #fff 229px,#525252 229px, #525252 230px, #fff 230px, #fff 100%);
+    background-repeat: no-repeat;
     font-family: AvenirNextCyr, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
-    font-size: 1.3rem;
-    -ms-filter: 'progid DXImageTransform.Microsoft.gradient (GradientTyoe=0, startColorstr = #1471da, endColorstr =#1C85FB';
-    background-image: linear-gradient(to bottom, #525252 18%,  #525252 18%, #fff 18%, #fff 65%, #52525265, #525252 66%,#fff 66%,#fff 100%);
+    font-size: 1.3rem;    
 }
 
 .header__box {
@@ -79,6 +79,15 @@ body {
     justify-content: flex-end;
 }
 
+.goods-bascet__counter {
+    font-size: 1.4rem;
+    transform: translateY(6px);
+}
+
+.header__img--not-margin {
+    margin: 0;
+}
+
 .menu {
     height: 77px;
 }
@@ -103,7 +112,7 @@ body {
     display: none;
 }
 
-label {border: 1px solid red;
+label {
     width: 2rem;
     height: 2rem;
     position: absolute;
@@ -157,12 +166,40 @@ label {border: 1px solid red;
     letter-spacing: 0.1em
 }
 
+.menu__item:hover {
+    transform: scale(1.1);
+}
+.header__img:active {
+    transform: rotateZ(45deg);
+    transition: .5s;
+    
+}
+.menu__item:active {
+    text-shadow: 0 0 3px rgb(135, 200, 230);
+    
+}
+
 .invisible {
     display: none;
 }
 
 @media (max-width: 800px) {
-    
+    html {
+        font-size: 8px;
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, #525252 0,  #525252 47px, #fff 47px);
+        background-repeat: no-repeat;
+    }
+
+    .header__info {
+        height: 45px;
+    }
+
+    .header__container {
+        height: 63px;
+    }    
 
     .header__info-text--call-invisible,
     .header__info-item--invisible,
