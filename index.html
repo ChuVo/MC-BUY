@@ -13,26 +13,33 @@
 </head>
 <body>
     <header class='header'>
-        <div class="header__box">
-            <div class='header__info'>
+        <div class='header__info header__block-wrapper'>
             <div class="header__info-item">
                 <img class='header__img' src="image/icon/aeroplane.png" alt="Бесплатная доставка и примерка">
-                <span class="header__info-text">Бесплатная доставка и примерка</span>
+                <span class="header__info-text">
+                        <span class='header__span-br'>Бесплатная доставка&nbsp</span>
+                        <span class='header__span-br'>и примерка</span>
+                    </span>
             </div>
             <div class='header__info-item'>
                 <img class='header__img' src="image/icon/time.png" alt="Рабочий график">
-                <span class='header__info-text'>Пн - Вс 9:00 - 21:00</span>
+                <p class='header__info-text'>
+                    <span class='header__span-br'>Пн - Вс&nbsp</span>
+                    <span class='header__span-br''>9:00 - 21:00</span></p>
             </div>
             <div class='header__info-item'>
                 <img class='header__img' src="image/icon/call.png" alt="Позвоните нам">
-                <span class='header__info-text header__info-text--call-invisible'>8 800 555 27 48  8 800 555 2748</span>
+                <span class='header__info-text header__info-text--call-invisible'>
+                    <span class='header__span-br'>8 800 555 2748 &nbsp</span>
+                    <span class='header__span-br'>8 800 555 2748</span>
+                </span>
             </div>
             <div class='header__info-item header__info-item--invisible'>
                 <img class='header__img' src="image/icon/user.png" alt="Рабочий график">
                 <span class='header__info-text'>Вход/Регистрация</span>
             </div>
         </div>
-        <div class="header__container">
+        <div class="header__container header__block-wrapper">
             <div class="header__form-search header__form-search--down">
                 <div class="header__menu-icon">  <!-- Иконка бургера меню -->
                     <input type="checkbox"  id="menu__check">
@@ -52,7 +59,8 @@
                 <span class="goods-bascet__counter">10</span><!-- добавится через js -->                   
             </div>
         </div>
-        <div class="header__menu menu">            
+        <hr class="header__gorizont-line">
+        <div class="header__menu menu header__block-wrapper">            
             <nav class="menu__items">
                 <a class="menu__item" href="#">новинки</a>
                 <a class="menu__item" href="#">одежда</a>
@@ -63,9 +71,17 @@
                 <a class="menu__item"href="#">sale</a>
             </nav>                       
         </div>
-        </div>
-        
+        <hr class="header__gorizont-line">
     </header>
+    <main class="main">
+        <figure class="img-wrapper">
+            <img class="baner" src="image/baner-sale.png">
+        </figure>        
+    </main>
+   
+       
+        
+    
 
     
 </body>

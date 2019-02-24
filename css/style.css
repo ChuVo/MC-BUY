@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, #525252 0,  #525252 40px, #fff 40px, #fff 146px,  #525252 146px, #525252 147px,#fff 147px, #fff 229px,#525252 229px, #525252 230px, #fff 230px, #fff 100%);
+    background-image: linear-gradient(to bottom, #525252 0,  #525252 40px, #fff 40px);
     background-repeat: no-repeat;
     font-family: AvenirNextCyr, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -12,11 +12,12 @@ body {
     font-size: 1.3rem;    
 }
 
-.header__box {
+.header__block-wrapper {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 5%;
 }
+
 .header__info {
     align-items: center;
     color: #fff;
@@ -27,24 +28,28 @@ body {
 
 .header__info-item,
 .header__form-search {
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
 .header__img {
-    width: 2rem;
-    margin-right: 10px;
     cursor: pointer;
+    margin-right: 10px;
+    width: 2rem;
 }
 
 .header__img:hover {
     transform: scale(1.1);
 }
 
+.header__span-br {
+    display: inline-block;
+}
+
 .header__container {
-    height: 107px;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 107px;
     justify-content: space-between;
 }
 
@@ -73,10 +78,10 @@ body {
 }
 
 .goods-basket {
-    display: flex;
     align-items: center;
-    width: 30%;
+    display: flex;
     justify-content: flex-end;
+    width: 30%;
 }
 
 .goods-bascet__counter {
@@ -88,24 +93,30 @@ body {
     margin: 0;
 }
 
+.header__gorizont-line {
+    size: 12;
+    color: #333;
+    width: 100%;
+}
+
 .menu {
     height: 77px;
 }
 
 .header__menu-icon {
-    display: none;
-    width: 2em;
-    height: 2em;
-    flex-direction: column;
     align-items: center;
+    display: none;
+    flex-direction: column;
+    height: 2em;    
     justify-content: center;  
-    margin-right: 10px;  
+    margin-right: 10px;
+    width: 2em;
 }
 
 .menu__icon-item {
-    width: 100%;
-    height: 2px;
     background:#525252;
+    height: 2px;
+    width: 100%;
 }
 
 #menu__check {    
@@ -113,10 +124,10 @@ body {
 }
 
 label {
-    width: 2rem;
+    cursor: pointer;
     height: 2rem;
     position: absolute;
-    cursor: pointer;
+    width: 2rem;
     z-index: 9;
 }
 
@@ -129,8 +140,8 @@ label {
 }
 
 .header__menu-icon :nth-child(5) {
-    transform: translateY(-50%);
     margin-bottom: 5px;
+    transform: translateY(-50%);    
 }
 
 #menu__check:checked ~ .menu__icon-item--first {
@@ -152,35 +163,52 @@ label {
 }
 
 .menu__items {
-    height: 100%;
+    align-items: center;    
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    height: 100%;
 }
 
 .menu__item {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    text-decoration: none;
     color: #333;
-    letter-spacing: 0.1em
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;    
+    letter-spacing: 0.1em;
 }
 
 .menu__item:hover {
     transform: scale(1.1);
 }
+
 .header__img:active {
-    transform: rotateZ(45deg);
     transition: .5s;
-    
+    transform: rotateZ(45deg);    
 }
+
 .menu__item:active {
-    text-shadow: 0 0 3px rgb(135, 200, 230);
-    
+    text-shadow: 0 0 3px rgb(135, 200, 230);    
 }
 
 .invisible {
     display: none;
+}
+
+.main {
+    max-width: 1300px;
+    margin: 0  auto;
+    padding: 0 5%;
+}
+
+.img-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+      
+}
+
+.baner {
+    width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -196,19 +224,19 @@ label {
     .header__info {
         height: 45px;
     }
+    
+    .header__info-text--call-invisible,
+    .header__info-item--invisible,
+    .header__search-value {
+        display: none;
+    }
 
     .header__container {
         height: 63px;
     }    
 
-    .header__info-text--call-invisible,
-    .header__info-item--invisible,
-    .header__search-value  {
-        display: none;
-    }   
-
     .header__form-search--down,
-    .header__goods-basket--down{
+    .header__goods-basket--down {
         position: inherit;
     }
 
@@ -216,14 +244,21 @@ label {
         display: flex;
     }
 
-    .menu__items {
+    .header__gorizont-line{
         display: none;
     }
 
-   
+    .header__menu {
+        display: none;
+    }
 
-
-
-
+    .main {
+        padding: 0;
+    }
+    
+    .baner{
+        width: 200%;
+        transform: translateX(-25%)
+    }
 }
 
