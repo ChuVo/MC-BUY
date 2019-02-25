@@ -207,7 +207,7 @@ label {
 
 .main__baner {
     width: 100%;
-    margin-bottom: 11.3rem;
+    margin-bottom: 8.5%;
 }
 
 .content {
@@ -217,7 +217,7 @@ label {
 }
 
 .content--margin {
-    margin-bottom: 100px;
+    margin-bottom: 8%;
 }
 
 .content-box {
@@ -227,6 +227,12 @@ label {
 
 .content--new-style {
     width: 41%;
+    position: relative;
+}
+
+.relativ {
+    position: absolute;
+    top: 40%;
 }
 
 .content__title {
@@ -240,7 +246,7 @@ label {
 }
 
 .content__text {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -249,6 +255,8 @@ label {
     justify-content: flex-end;
     width: 100%;
 }
+
+
 
 .image-content--marc-cain-sports {
     align-items: flex-end ;
@@ -269,18 +277,14 @@ label {
 .content__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    transform: translateY(210%);   
+    align-items: center;  
 }
 
-.content__text--margin {
-    margin: 0;
-}
+.content__wrapper--absolute {
+    position: absolute;
+    top: 40%;
 
-.image-content--new-style {
-    transform: translateY(-40px);
 }
-
 
 .image-content__pictur {
     width: 100%;
@@ -293,16 +297,20 @@ label {
 
 .content-box--width {
     width: 57%;
-    margin-top: 85px;
+    margin-top: 6.5%;
 }
 
 .content__image--opacity {
     opacity: 0.3;
 }
 
+.image-content--sale {
+    margin-bottom: 10%;
+}
+
 .content-box__horizontal-line {
     background-color: #222020;
-    margin: 85px 0 19px 0;
+    margin-bottom: 19px;
     width: 50%;
     height: 2px;;
     
@@ -318,6 +326,70 @@ label {
     font-size: 1.5rem;
 }
 
+@media (max-width: 1370px) {
+    .header__block-wrapper,
+    .main--block-wrapper {
+        max-width: 1000px;        
+    }
+
+    .header__container {
+        height: 63px;
+    }
+
+    .header__info {
+        height: 45px;
+    }
+
+    .header__form-search--down,
+    .header__goods-basket--down {
+        position: inherit;
+    }
+
+    .menu {
+        height: 45px;
+    }
+
+    .content__title {
+        font-size: 3rem;
+    }
+
+    .content__text {
+        font-size: 2rem;
+    }
+
+    .image-content--sale {
+        margin-bottom: 13%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header__block-wrapper,
+    .main--block-wrapper {
+        max-width: 780px;        
+    }
+
+    .content--margin {
+        margin-bottom: 5%;
+    }
+
+    .image-content--sale {
+        margin-bottom: 12%;
+    }
+
+    .content-box__horizontal-line {
+        margin-bottom: 0px;
+    }
+
+
+    .content__title {
+        font-size: 3rem;
+    }
+
+    .content__text {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 800px) {
     html {
         font-size: 8px;
@@ -328,23 +400,10 @@ label {
         background-repeat: no-repeat;
     }
 
-    .header__info {
-        height: 45px;
-    }
-    
     .header__info-text--call-invisible,
     .header__info-item--invisible,
     .header__search-value {
         display: none;
-    }
-
-    .header__container {
-        height: 63px;
-    }    
-
-    .header__form-search--down,
-    .header__goods-basket--down {
-        position: inherit;
     }
 
     .header__menu-icon {
