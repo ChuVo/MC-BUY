@@ -282,7 +282,7 @@ label {
 
 .content__wrapper--absolute {
     position: absolute;
-    top: 40%;
+    top: 45%;
 
 }
 
@@ -304,7 +304,7 @@ label {
     opacity: 0.3;
 }
 
-.image-content--sale {
+.image-content--margin {
     margin-bottom: 10%;
 }
 
@@ -357,7 +357,7 @@ label {
         font-size: 2rem;
     }
 
-    .image-content--sale {
+    .image-content--margin {
         margin-bottom: 13%;
     }
 }
@@ -372,7 +372,7 @@ label {
         margin-bottom: 5%;
     }
 
-    .image-content--sale {
+    .image-content--margin {
         margin-bottom: 12%;
     }
 
@@ -428,6 +428,15 @@ label {
         margin-bottom: 30px;
     }
 
+    .content-box {
+        flex-direction: column;
+    }
+
+    .content--new-style,
+    .content-box--width {
+        width: 100%;
+    }
+
     .content__title {
         font-size: 3rem;
     }
@@ -443,16 +452,43 @@ label {
     .image-content__wrapper--margin {
         margin: 0;
     }
-
-    .image-content__pictur--marc-cain-sports {
-        width: 200%;
-        transform: translateX(-40%);
-        
-    }
-
+    
     .image-content--marc-cain-sports {
        background: none;
     }
 
+    .image-content__pictur--marc-cain-sports {
+        width: 200%;
+        transform: translateX(-40%);        
+    }
+
+    .content__wrapper--absolute {
+        position: static;
+    }
+
+    .content__button-buy {
+        display: none;
+    }
+
+    .image-content__wrapper--zoom {
+        height: 390px;
+    }
+
+    .image-content__pictur--zoom {
+        transform: translateY(-10%);
+    }
+
+    .image-content__pictur--width {
+        width: 125%;
+        transform: translateX(-4%);
+    }
+
+    .image-content__pictur--slide {
+        transform: translateX(-6%);
+    }
+
+   
+
 }
+
 
