@@ -12,8 +12,9 @@ body {
     font-size: 1.3rem;    
 }
 
-.header__block-wrapper {
-    max-width: 1300px;
+.header__block-wrapper,
+.main--block-wrapper {
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 5%;
 }
@@ -60,7 +61,7 @@ body {
 .header__form-search--down,
 .header__goods-basket--down {
     position: relative;
-    top: 16px;
+    top: 1.6rem;
 }
 
 .header__img--search {
@@ -94,13 +95,17 @@ body {
 }
 
 .header__gorizont-line {
-    size: 12;
     color: #333;
     width: 100%;
+    margin: 0;
+}
+
+.header__gorizont-line--margin-bottom {
+    margin-bottom: 3rem;
 }
 
 .menu {
-    height: 77px;
+    height: 75px;
 }
 
 .header__menu-icon {
@@ -171,7 +176,7 @@ label {
 
 .menu__item {
     color: #333;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;    
     letter-spacing: 0.1em;
@@ -194,21 +199,123 @@ label {
     display: none;
 }
 
-.main {
-    max-width: 1300px;
-    margin: 0  auto;
-    padding: 0 5%;
-}
-
-.img-wrapper {
+.main__img-wrapper {
     margin: 0 auto;
     width: 100%;
-    overflow: hidden;
-      
+    overflow: hidden;      
 }
 
-.baner {
+.main__baner {
     width: 100%;
+    margin-bottom: 11.3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content--margin {
+    margin-bottom: 100px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content--new-style {
+    width: 41%;
+}
+
+.content__title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+.content__title--invisible {
+    display: none;
+}
+
+.content__text {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.image-content {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.image-content--marc-cain-sports {
+    align-items: flex-end ;
+    background:  url("../image/icon/figure1.png")  no-repeat  top left;
+    background-size: 60%;
+}
+
+.image-content__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;   
+}
+
+.image-content__wrapper--margin {
+    margin: 4% 0 0 6%;
+}
+
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(210%);   
+}
+
+.content__text--margin {
+    margin: 0;
+}
+
+.image-content--new-style {
+    transform: translateY(-40px);
+}
+
+
+.image-content__pictur {
+    width: 100%;
+}
+
+.image-content__pictur--new-style {
+    opacity: 0.5;
+    float: left;
+}
+
+.content-box--width {
+    width: 57%;
+    margin-top: 85px;
+}
+
+.content__image--opacity {
+    opacity: 0.3;
+}
+
+.content-box__horizontal-line {
+    background-color: #222020;
+    margin: 85px 0 19px 0;
+    width: 50%;
+    height: 2px;;
+    
+}
+
+.content__button-buy {
+    width: 50%;
+    height:45px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 800px) {
@@ -256,9 +363,37 @@ label {
         padding: 0;
     }
     
-    .baner{
+    .main__baner{
         width: 200%;
-        transform: translateX(-25%)
+        transform: translateX(-25%);
+        margin-bottom: 30px;
     }
+
+    .content__title {
+        font-size: 3rem;
+    }
+
+    .content__title--invisible {
+        display: auto;
+    }
+
+    .content__marc-cain-sports {
+        background: none;
+    }
+
+    .image-content__wrapper--margin {
+        margin: 0;
+    }
+
+    .image-content__pictur--marc-cain-sports {
+        width: 200%;
+        transform: translateX(-40%);
+        
+    }
+
+    .image-content--marc-cain-sports {
+       background: none;
+    }
+
 }
 
