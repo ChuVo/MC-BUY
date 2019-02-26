@@ -417,43 +417,48 @@ label {
     background: #fff;
 }
 
-.content__wrapper--param {
-    width: 60%;
-}
-
 .content-box--param {
     align-items: center;
+    margin: 3% auto;
+}
+
+.content__title--param {
+    font-size: 4rem;
 }
 
 .content__text--param {
     text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10%;
 }
 
 .figure {
     height: 2%;
+    width: 15%;
 }
 
 .subscription {
     display: flex;
+    justify-content: space-between;
+    height: 45px;
+    font-size: 2rem; 
+    width: 70%;
 }
 
 .subscription__input {
-    width: 600px;
-    height:45px;
-    font-size: 2.4rem;
-    border: 1px solid #525252;
-    
+    border: 1px solid #525252;       
+    padding-left: 4%;
+    width: 65%;
 
 }
+
 .subscription__btn {
-    width: 40%;
-    height:45px;
+    width: 45%;
     background-color: #333;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     border: none;
-    font-size: 1.5rem;
 }
 
 
@@ -491,6 +496,13 @@ label {
     .image-content--margin {
         margin-bottom: 13%;
     }
+
+    .content__text--param {
+        font-size: 1.8rem;
+    }
+    .subscription {
+        font-size: 1.6rem; 
+    }
 }
 
 @media (max-width: 1200px) {
@@ -519,6 +531,19 @@ label {
     .content__text {
         font-size: 2rem;
     }
+
+    .content__title--param {
+        font-size: 2.8rem;
+    }
+
+    .content__text--param {
+        font-size: 1.3rem;
+    }
+
+    .subscription {
+        height: 40px;
+        font-size: 1.3rem; 
+    }
 }
 
 @media (max-width: 800px) {
@@ -538,7 +563,9 @@ label {
     .header__gorizont-line,
     .content-box__horizontal-line,
     .content__button-buy,
-    .content__figure--invisible {
+    .content__figure--invisible,
+    .figure,
+    .subscription__btn-text {
         display: none;
     }
 
@@ -622,11 +649,42 @@ label {
         margin-top: 0;
     }
 
+    .content__wrapper--place-left{
+        position: static;
+    }
+
     .content__wrapper--place-left,
     .content--place-right {
         align-items: center;
         align-self: center;
     }
+
+    .subscription {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        font-size: 1.2rem; 
+        width: 90%;
+    }
+
+    .subscription__input {
+        width: 90%;
+    }
+
+    .subscription__btn {
+        width: 60px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .subscription__arrow {
+        height: 20px;
+        width: 37%;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(45deg);        
+    }    
 }
 
 
