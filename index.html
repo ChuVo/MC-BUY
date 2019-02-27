@@ -95,7 +95,7 @@
                 </div>
                 <div class="image-content">                
                     <figure class='image-content__wrapper image-content__wrapper--zoom'>
-                        <img class="image-content__pictur image-content__pictur--new-style image-content__pictur--zoom" src="image/new-image.png" alt="Новый образ с MC BUY" title="Новый образ с MC BUY">
+                        <img class="image-content__pictur image-content__pictur--opacity image-content__pictur--zoom" src="image/new-image.png" alt="Новый образ с MC BUY" title="Новый образ с MC BUY">
                     </figure>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                 </div>
                 <div class="image-content image-content--size">                
                     <figure class='image-content__wrapper image-content__wrapper--zoom'>
-                        <img class="image-content__pictur image-content__pictur--new-style image-content__pictur--zoom" src="image/dres.png" alt="Новый образ с MC BUY" title="Новый образ с MC BUY">
+                        <img class="image-content__pictur image-content__pictur--zoom" src="image/dres.png" alt="Новый образ с MC BUY" title="Новый образ с MC BUY">
                     </figure>
                 </div>
             </div>
@@ -170,11 +170,12 @@
         </div>    
     </main>
     <footer class="footer">
-
         <div class="footer__block-wrapper">
-            <div class="footer__footer-top footer--top">
-            <div class="footer-top__column">
-                <img src="image/icon/mc-buy.png" alt="MC BUY">                
+            <div class="footer__footer-top footer-top">
+            <div class="column column--last-order column--margin">
+                <div class="column__logo-wrapper">
+                    <img src="image/icon/mc-buy.png" alt="MC BUY" class="column__logo"> 
+                </div>      
             </div>
             <div class="footer-top__column column">
                 <h3 class="column__title">MC BUY</h3>
@@ -193,7 +194,6 @@
                     </li>
                 </ul>               
             </div>
-
             <div class="footer-top__column column">
                 <h3 class="column__title">Каталог</h3>
                 <ul class="column__list">
@@ -244,12 +244,18 @@
             </div>          
         </div>
         <div class="footer__copiright copyright">Copyright &copy MCBUY.RU 2018  Все права защищены</div>
-        <div class="foter__social social">
+        <div class="footer__social social">
             <span class="social__text">Мы в социальных сетях</span>
             <div class="social__items">
-                <img src="image/icon/facebook.png" alt="Мы в Facebook" class="social__item">
-                <img src="image/icon/instagram.png" alt="Мы в instagram" class="social__item">
-                <img src="image/icon/vk.png" alt="Мы вo Вконтакте" class="social__item">
+                <a class="social__link" href="#">
+                    <img src="image/icon/facebook.png" alt="Мы в Facebook" class="social__item">
+                </a>
+                <a class="social__link" href="#">
+                    <img src="image/icon/instagram.png" alt="Мы в instagram" class="social__item">
+                </a>                
+                <a social__items href="#">
+                    <img src="image/icon/vk.png" alt="Мы вo Вконтакте" class="social__item">
+                </a>                
             </div>
         </div>
 
