@@ -13,7 +13,8 @@ body {
 }
 
 .header__block-wrapper,
-.main--block-wrapper {
+.main--block-wrapper,
+.footer__block-wrapper {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 5%;
@@ -461,10 +462,101 @@ label {
     border: none;
 }
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+
+}
+
+.footer__block-wrapper {
+    width: 100%;
+}
+
+.footer__block-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.footer--top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 20%;
+}
+
+.footer-top__column {
+    width: 20%;
+}
+
+.column__list {
+    padding: 0;
+}
+
+.column__items {
+    list-style-type: none;
+    margin: 1rem 0 1rem 0;
+}
+
+.column__item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.column__title:hover {
+    text-decoration: underline;
+}
+.column__items:hover,
+.column__image:hover  {
+    transform: scale(1.05);
+}
+
+.column__images {
+    display: flex;
+    align-items: center;
+}
+
+.column__image {
+    width: 18%;
+    margin-right: 5%;
+ }
+
+ .copyright {
+     display: inline-block;
+ }
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: flex-end;
+    align-self: flex-end;
+    transform: translateY(-15%);
+}
+
+.social__text {
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+}
+
+.social__items {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social__item {
+    display: inline-block;
+    margin-left: 10%;
+}
 
 @media (max-width: 1370px) {
     .header__block-wrapper,
-    .main--block-wrapper {
+    .main--block-wrapper,
+    .footer__block-wrapper {
         max-width: 1000px;        
     }
 
@@ -498,16 +590,17 @@ label {
     }
 
     .content__text--param {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .subscription {
-        font-size: 1.6rem; 
+        font-size: 1.5rem; 
     }
 }
 
 @media (max-width: 1200px) {
     .header__block-wrapper,
-    .main--block-wrapper {
+    .main--block-wrapper,
+    .footer__block-wrapper {
         max-width: 780px;        
     }
 
