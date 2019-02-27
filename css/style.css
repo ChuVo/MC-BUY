@@ -298,7 +298,7 @@ label {
     align-items: center; 
     display: flex;
     flex-direction: column;
-    z-index: 5; 
+    z-index: 9; 
 }
 
 .content__wrapper--absolute {
@@ -319,6 +319,7 @@ label {
 
 .image-content__pictur--opacity {
     opacity: 0.5;
+    z-index: -1;
 }
 
 .content-box--width {
@@ -362,6 +363,11 @@ label {
     font-size: 1.5rem;
 }
 
+.content__button-buy:active,
+.subscription__btn:active {
+    background-color: #525252;
+}
+
 .content__title--margin {
     margin-bottom: 1%;
 }
@@ -399,7 +405,6 @@ label {
 }
 
 .image-content__pictur--shoes {
-    /* margin-bottom: 5%; */
     width: 86%;
 }
 
@@ -460,6 +465,10 @@ label {
     text-decoration: none;
     text-transform: uppercase;
     border: none;
+}
+
+.subscription__btn:active {
+    background-color: #525252;
 }
 
 .footer {
