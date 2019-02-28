@@ -168,11 +168,19 @@ label {
     display: none;
 }
 
+#menu__check:checked ~ .menu__elements {
+    transform: translateX(0);
+}
+
 .menu__items {
     align-items: center;    
     display: flex;
     justify-content: space-between;
     height: 100%;
+}
+
+.menu__elements {
+    display: none;
 }
 
 .menu__item {
@@ -696,6 +704,40 @@ label {
 
     .header__menu-icon {
         display: flex;
+    }
+
+    .menu__elements {
+        align-items: flex-start;
+        background: rgb(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: calc(100vh - 108px);
+        left: 0;
+        padding-right: 2%;
+        position: absolute;
+        top: 108px;
+        transform: translateX(-100%);
+        transition: .5s;
+        width: 50vw;
+        z-index: 9;
+    }
+
+    .menu__elem {
+        color: #fff;
+        text-decoration: none;
+        text-align: right;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .menu__elem:hover {
+        background: linear-gradient(to bottom, transparent 60% , #000 60% ,  #000 100%);
+        background-size: 50%;
+    }
+
+    .menu__elem:active {
+        transform: scale(1.1)
     }
 
     .main {
