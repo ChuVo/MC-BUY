@@ -6,10 +6,271 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MC BUY</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/AvenirNextCyr.css">
+    <link rel="stylesheet" href="css/PlayfairDisplay.css">
+    <link rel="shortcut icon" type="image/png" href="image/icon/heart-upside-down.png"/>
 </head>
 <body>
+    <header class='header'>
+        <div class='header__info header__block-wrapper'>
+            <div class="header__info-item">
+                <img class='header__img' src="image/icon/aeroplane.png" alt="Бесплатная доставка и примерка">
+                <span class="header__info-text">
+                    <span class='header__span-br'>Бесплатная доставка&nbsp</span>
+                    <span class='header__span-br'>и примерка</span>
+                </span>
+            </div>
+            <div class='header__info-item'>
+                <img class='header__img' src="image/icon/time.png" alt="Рабочий график">
+                <p class='header__info-text'>
+                    <span class='header__span-br'>Пн - Вс&nbsp</span>
+                    <span class='header__span-br'>9:00 - 21:00</span>
+                </p>
+            </div>
+            <div class='header__info-item'>
+                <img class='header__img' src="image/icon/call.png" alt="Позвоните нам">
+                <span class='header__info-text header__info-text--invisible'>
+                    <span class='header__span-br'>8 800 555 2748 &nbsp</span>
+                    <span class='header__span-br'>8 800 555 2748</span>
+                </span>
+            </div>
+            <div class='header__info-item header__info-item--invisible'>
+                <img class='header__img' src="image/icon/user.png" alt="Рабочий график">
+                <span class='header__info-text'>Вход/Регистрация</span>
+            </div>
+        </div>
+        <div class="header__container header__block-wrapper">
+            <div class="header__form-search header__form-search--down">
+                <div class="header__menu-icon">  <!-- Иконка бургера меню -->
+                    <input type="checkbox"  id="menu__check">
+                    <label  for="menu__check" ></label>
+                    <span class="menu__icon-item menu__icon-item--first"></span>
+                    <span class="menu__icon-item menu__icon-item--second"></span>
+                    <span class="menu__icon-item menu__icon-item--third"></span>
+                    <span class="menu__icon-item menu__icon-item--fourth"></span>                      
+                </div>
+                <img class='header__img header__img--search' src="image/icon/magnifying-glass.png" alt="Найте товар">
+                <input class='header__search-value' value="Поиск" onclick="value = ''"></input>
+            </div>
+            <img class="logo" src="image/icon/mc-buy.png">
+            <div class="goods-basket header__goods-basket--down">
+                <img class='header__img header__img--search' src="image/icon/heart-upside-down.png" alt="Избранное">
+                <img class='header__img header__img--search header__img header__img--not-margin' src="image/icon/basket.png" alt="Посмотреть содержимое корзины">
+                <span class="goods-bascet__counter">10</span><!-- добавится через js -->                   
+            </div>
+        </div>
+        <hr class="header__gorizont-line">
+        <div class="header__menu menu header__block-wrapper">            
+            <nav class="menu__items">
+                <a class="menu__item" href="#">новинки</a>
+                <a class="menu__item" href="#">одежда</a>
+                <a class="menu__item" href="#">обувь</a>
+                <a class="menu__item" href="#">сумки</a>
+                <a class="menu__item" href="#">аксесуары</a>
+                <a class="menu__item"href="#">модный блог</a>
+                <a class="menu__item"href="#">sale</a>
+            </nav>                       
+        </div>
+        <hr class="header__gorizont-line header__gorizont-line--margin-bottom">
+    </header>
+    <main class="main main--block-wrapper">
+        <figure class="main__img-wrapper">
+            <img class="main__baner" src="image/baner-sale.png" alt="Распродажа в MC BUY" title="Распродажа в MC BUY">
+        </figure>
+        <div class='content content--margin'>
+            <h1 class='content__title content__title--invisible'>Marc Cain Sport</h1>
+            <div class="image-content image-content--marc-cain-sports">                
+                <figure class='image-content__wrapper image-content__wrapper--margin'>
+                    <img class="image-content__pictur image-content__pictur--marc-cain-sports" src="image/marc-cain-sports.png" alt="Marc Cain Sport" title="Распродажа в MC BUY">
+                </figure>
+            </div>
+        </div>
+        <div class="content-box content-box--margin-bottom">
+            <div class="content content--relative content--place-center content--width">
+                <h1 class="content__title">Новый образ</h1>
+                <div class="content__wrapper content__wrapper--absolute">
+                    <p class="content__text content__text--text-center">Весенний образ 2019 года<br>в каралловом цвете</p>
+                    <button class="content__button-buy">Купить</button>
+                </div>
+                <div class="image-content">                
+                    <figure class='image-content__wrapper image-content__wrapper--zoom'>
+                        <img class="image-content__pictur image-content__pictur--opacity image-content__pictur--zoom" src="image/new-image.png" alt="Новый образ с MC BUY" title="Новый образ с MC BUY">
+                    </figure>
+                </div>
+            </div>
+            <div class="content-box--width content-box--margin-top">
+                <div class='content'>
+                    <h1 class='content__title'>Распродажа</h1>
+                    <div class="image-content image-content--margin">                
+                        <figure class='image-content__wrapper'>
+                            <img class="image-content__pictur image-content__pictur--width" src="image/sale.png" alt="Sale from Marc Cain" title="Распродажа в MC BUY">
+                        </figure>
+                    </div>
+                    <hr class="content-box__horizontal-line">
+                </div>
+                <div class='content'>
+                    <h1 class='content__title'>Сумки</h1>
+                    <div class="image-content">                
+                        <figure class='image-content__wrapper'>
+                            <img class="image-content__pictur image-content__pictur--width image-content__pictur--slide" src="image/bag.jpg" alt="Sale from Marc Cain" title="Распродажа в MC BUY">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class='content__title content__title--margin'>Модный блог</h1>
+        <div class="content-box">            
+            <div class="content-box--width">                
+                <div class='content content--relative content--margin-top'>
+                        <p class="content__text content__text--position content__text--shoes">Весенние тренды.<br>Что купить?</p>
+                    <img src="image/icon/figure3.png" alt="Contur" class="content__figure content__figure--3 content__figure--invisible">                  
+                    <div class="image-content image-content--margin">                
+                        <figure class='image-content__wrapper'>
+                            <img class="image-content__pictur image-content__pictur--width image-content__pictur--shoes image-content__pictur--margin-null" src="image/shoes.png" alt="Sale from Marc Cain" title="Распродажа в MC BUY">
+                        </figure>
+                    </div>
+                </div>
+                <div class='content content--place-right content--relative'>
+                    <p class="content__text content__text--position content__text--trends">6 главных трендов<br> этого лета</p>
+                    <img src="image/icon/figure5.png" alt="Contur" class="content__figure content__figure--5 content__figure--invisible">
+                    <div class="image-content">                
+                        <figure class='image-content__wrapper'>
+                            <img class="image-content__pictur image-content__pictur--width  image-content__pictur--trnds image-content__pictur--margin-null" src="image/trends.png" alt="Sale from Marc Cain" title="Распродажа в MC BUY">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="content content--relative content--width content--drop">
+                <img src="image/icon/figure4.png" alt="Contur" class="content__figure content__figure--4 content__figure--invisible">
+                <div class="content__wrapper content__wrapper--place-left">
+                    <p class="content__text content__text--backgrond-white">Новогодний дресс-код.<br>В чем встречать?</p>
+                </div>
+                <div class="image-content image-content--size">                
+                    <figure class='image-content__wrapper image-content__wrapper--zoom'>
+                        <img class="image-content__pictur image-content__pictur--zoom" src="image/dres.png" alt="Новый образ с MC BUY" title="Новый образ с MC BUY">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="content-box content-box--param">
+                <img src="image/icon/figure6.png" alt="" class="figure">
+            <div class="content__wrapper content__wrapper--param">
+                <h1 class="content__title content__title--param">Узнавайте первыми</h1>
+                <p class="content__text content__text--param">О новых поступлениях, распродажах, трендах.<br>Подпишитесь на рассылку и получите скидку 10% уже на первый заказ!</p>
+                <div class="subscription">
+                    <input class="subscription__input" type="email" value="Введите ваш e-mail" onclick="value = ''">
+                    <button class="subscription__btn">
+                        <span class="subscription__btn-text">Подписаться</span>
+                        <div class="subscription__arrow"></div>
+                    </button>
+                </div>
+            </div>
+            <img src="image/icon/figure6.png" alt="" class="figure">
+        </div>    
+    </main>
+    <footer class="footer">
+        <div class="footer__block-wrapper">
+            <div class="footer__footer-top footer-top">
+            <div class="column column--last-order column--margin">
+                <div class="column__logo-wrapper">
+                    <img src="image/icon/mc-buy.png" alt="MC BUY" class="column__logo"> 
+                </div>      
+            </div>
+            <div class="footer-top__column column">
+                <h3 class="column__title">MC BUY</h3>
+                <ul class="column__list">
+                    <li class="column__items">
+                        <a class="column__item" href="#">Производство</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Философия</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Интервью Хельмуда Шлоттера</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Модный блог</a>
+                    </li>
+                </ul>               
+            </div>
+            <div class="footer-top__column column">
+                <h3 class="column__title">Каталог</h3>
+                <ul class="column__list">
+                    <li class="column__items">
+                        <a class="column__item" href="#">Новинки</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Одежда</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Обувь</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Сумки</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Аксесуары</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Sale</a>
+                    </li>                        
+                </ul>               
+            </div>
+            <div class="footer-top__column column">
+                <h3 class="column__title">Помощь</h3>
+                <ul class="column__list">
+                    <li class="column__items">
+                        <a class="column__item" href="#">Оформление заказов</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Список размеров</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Условия доставки</a>
+                    </li>
+                    <li class="column__items">
+                        <a class="column__item" href="#">Условия возврата</a>
+                    </li>                      
+                </ul>               
+            </div>
+            <div class="footer-top__column column">
+                <h3 class="column__title">Способы оплаты</h3>
+                <div class="column__images">
+                    <img class="column__image" src="image/icon/mastercard.png" alt="MC BUY c платежной системой mastercard">
+                    <img class="column__image" src="image/icon/visa.png" alt="MC BUY c платежной системой visa">
+                    <img class="column__image" src="image/icon/mir.png" alt="MC BUY c платежной системой МИР">
+                </div>                
+            </div>          
+        </div>
+        <div class="footer__copiright copyright">Copyright &copy MCBUY.RU 2018  Все права защищены</div>
+        <div class="footer__social social">
+            <span class="social__text">Мы в социальных сетях</span>
+            <div class="social__items">
+                <a class="social__link" href="#">
+                    <img src="image/icon/facebook.png" alt="Мы в Facebook" class="social__item">
+                </a>
+                <a class="social__link" href="#">
+                    <img src="image/icon/instagram.png" alt="Мы в instagram" class="social__item">
+                </a>                
+                <a social__items href="#">
+                    <img src="image/icon/vk.png" alt="Мы вo Вконтакте" class="social__item">
+                </a>                
+            </div>
+        </div>
+
+        
+
+        </div>
+
+        
+    </footer>
+    
+   
+       
+        
+    
+
     
 </body>
 </html>
