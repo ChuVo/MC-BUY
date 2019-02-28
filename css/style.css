@@ -137,15 +137,15 @@ label {
     z-index: 9;
 }
 
-.header__menu-icon :nth-child(3) {
+.menu__icon-item--first {
     margin-bottom: 5px;
 }
 
-.header__menu-icon :nth-child(4) {
+.menu__icon-item--second {
     transform: translateY(50%);
 }
 
-.header__menu-icon :nth-child(5) {
+.menu__icon-item--third {
     margin-bottom: 5px;
     transform: translateY(-50%);    
 }
@@ -708,7 +708,7 @@ label {
 
     .menu__elements {
         align-items: flex-start;
-        background: rgb(0, 0, 0, .5);
+        background: rgb(0, 0, 0, .7);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
