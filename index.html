@@ -40,6 +40,51 @@
                 <span class='header__info-text'>Вход/Регистрация</span>
             </div>
         </div>
+        <div class="form-container">
+            <form class="form" method="POST" action=" ">
+                <div class="form__inputs">
+                    <input class="form__input" type="text" name="user-name" placeholder="Логин">
+                </div>
+                <div class="form__inputs">
+                    <input class="form__input" type="password" name="password" placeholder="Пароль">
+                </div>
+                <input class="form__submit" type="submit" name="submit" value="войти"><br />
+                <div class='form__questions'>
+                    <a class='form__question' href="#">Забыли пароль?</a>
+                </div>            
+            </form>
+            <span class='form__text'>Войти с помощью</span>
+            <div class="form__social">
+                <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                <i class="fa fa-vk" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>         
+            </div>
+            <span class='form__text'>Еще нет акаунта?</span>
+            <input class="form__submit form__submit--margin" type="submit" name="submit" value="регистрация"><br />
+        </div>
+
+        <div class="form-container form-container--registration">
+            <form class="form" method="POST" action=" ">
+                <div class="form__inputs">
+                    <input class="form__input" type="text" name="user-name" placeholder="Логин">
+                </div>
+                <div class="form__inputs">
+                    <input class="form__input" type="e-mail" name="e-mail" placeholder="e-mail">
+                </div>
+                <div class="form__inputs form__input-hint" data-title="не менее 6 символов"">
+                    <input class="form__input type="password" name="password" placeholder="Пароль">
+                </div>
+                <div class="form__inputs">
+                    <input class="form__input" type="password" name="password" placeholder="Подтвердите пароль">
+                </div>
+                <div class="form__accept-wrapper">
+                    <input class='form__accept-check' type="checkbox"  id="accept"> 
+                <a href='#' class='form__accept-text'>Я даю согласие на обработку моих персональных данных</a>
+                </div>
+                
+            <input class="form__submit form__submit--margin" type="submit" name="submit" value="регистрация"><br />
+        </div>
+
         <div class="header__container header__block-wrapper">
             <div class="header__form-search header__form-search--down">
                 <div class="header__menu-icon">  <!-- Иконка бургера меню -->
@@ -270,24 +315,6 @@
     </div>       
     </footer>
     
-    <div class="form-container">
-        <form class="form" method="POST" action=" ">
-            <div class="form__input">
-                <input type="text" name="user-name" placeholder="Логин">
-            </div>
-            <div class="form__input">
-                <input type="password" name="password" placeholder="Пароль">
-            </div>
-            <input class="form__submit" type="submit" name="submit" value="ВОЙТИ"><br />
-            <a href="#">Забыли пароль?</a>
-        </form>
-        <span class=form__text>Войти с помощью</span>
-        <div class="form__social">
-            <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
-            <i class="fa fa-vk" aria-hidden="true"></i>
-            <i class="fa fa-facebook" aria-hidden="true"></i>         
-        </div>
-    </div>
     
    
        
