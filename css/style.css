@@ -592,7 +592,7 @@ label {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 5px 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
     font-size: 1.6rem;
     padding: 4% 3%;
@@ -815,7 +815,7 @@ content: url(../image/icon/Fb.png);
 
     .header__menu,
     .header__info-text--invisible,
-    .header__info-item--invisible,
+    .header__info-item-login-icon,
     .header__search-value,
     .header__gorizont-line,
     .content-box__horizontal-line,
